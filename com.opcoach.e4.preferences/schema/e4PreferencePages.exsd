@@ -78,7 +78,11 @@
             <annotation>
                <documentation>
                   a name of the fully qualified class that implements 
-&lt;samp&gt;org.eclipse.ui.IWorkbenchPreferencePage&lt;/samp&gt;.
+&lt;samp&gt;org.eclipse.jface.preference.IPreferencePage&lt;/samp&gt;.
+
+IT IS EASYER to extend FieldEditorPreferencePage 
+
+If this class extends directly org.eclipse.jface.preference.FieldEditorPreferencePage preferenceStore is automatically set on it.
                </documentation>
                <appinfo>
                   <meta.attribute kind="java" basedOn="org.eclipse.jface.preference.FieldEditorPreferencePage:"/>
