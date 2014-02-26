@@ -1,4 +1,4 @@
-package com.opcoach.e4.preferences.handlers;
+package com.opcoach.e4.preferences.internal;
 
 import javax.inject.Inject;
 
@@ -69,7 +69,7 @@ public class E4PreferenceRegistry
 			PreferenceNode pn = null;
 			if (elmt.getAttribute(ATTR_CLASS) != null)
 			{
-				FieldEditorPreferencePage page = null;
+				IPreferencePage page = null;
 				try
 				{
 					String prefPageURI = getClassURI(bundleId, elmt.getAttribute(ATTR_CLASS));
@@ -79,10 +79,15 @@ public class E4PreferenceRegistry
 						logger.error("Expected instance of IPreferencePage: {0}", elmt.getAttribute(ATTR_CLASS));
 						continue;
 					}
-					page = (FieldEditorPreferencePage) object;
-					// Affect preference store to this page.
-					IPreferenceStore store = new ScopedPreferenceStore(InstanceScope.INSTANCE, bundleId);
-					page.setPreferenceStore(store);
+					page = (IPreferencePage) object;
+					// Affect preference store to this page if this is a
+					// FieldEditorPreferencePage, else, must manage it
+					// internally
+					if (page instanceof FieldEditorPreferencePage)
+					{
+						IPreferenceStore store = new ScopedPreferenceStore(InstanceScope.INSTANCE, bundleId);
+						((FieldEditorPreferencePage) page).setPreferenceStore(store);
+					}
 
 				} catch (ClassNotFoundException e)
 				{
@@ -118,8 +123,7 @@ public class E4PreferenceRegistry
 
 		return pm;
 	}
-	
-	
+
 	private IPreferenceNode findNode(PreferenceManager pm, String categoryId)
 	{
 		for (Object o : pm.getElements(PreferenceManager.POST_ORDER))
@@ -145,8 +149,7 @@ public class E4PreferenceRegistry
 	{
 		return value == null || value.trim().isEmpty();
 	}
-	
-	
+
 	static class EmptyPreferencePage extends PreferencePage
 	{
 
