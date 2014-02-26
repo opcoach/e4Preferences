@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+
+   <extension
+         id="product"
+         point="org.eclipse.core.runtime.products">
+      <product
+            name="com.opcoach.migration.luna"
+            application="org.eclipse.e4.ui.workbench.swt.E4Application">
+         <property
+               name="applicationCSS"
+               value="platform:/plugin/com.opcoach.e4.preferences.example/css/default.css">
+         </property>
+      </product>
+   </extension>
+   <extension
+         point="com.opcoach.e4.preferences.e4PreferencePages">
+      <page
+            class="com.opcoach.e4.preferences.example.pages.SamplePage"
+            id="com.opcoach.e4.preferences.example.sample"
+            name="Sample Page">
+      </page>
+      <page
+            class="com.opcoach.e4.preferences.example.pages.RootPage"
+            id="com.opcoach.e4.preferences.example.rootPage"
+            name="Root">
+      </page>
+      <page
+            category="com.opcoach.e4.preferences.example.rootPage"
+            class="com.opcoach.e4.preferences.example.pages.Page1"
+            id="com.opcoach.e4.preferences.example.page1"
+            name="Page 1">
+      </page>
+      <page
+            category="com.opcoach.e4.preferences.example.page1"
+            class="com.opcoach.e4.preferences.example.pages.Page2"
+            id="com.opcoach.e4.preferences.example.page2"
+            name="Page 2">
+      </page>
+   </extension>
+   <extension
+         point="org.eclipse.core.runtime.preferences">
+      <initializer
+            class="com.opcoach.e4.preferences.example.pages.DefaultValuesInitializer">
+      </initializer>
+   </extension>
+
+</plugin>

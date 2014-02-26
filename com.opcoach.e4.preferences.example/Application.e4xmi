@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_CK8voJvtEeORN6EBI34qOA" elementId="org.eclipse.e4.ide.application" bindingContexts="_CK8vqZvtEeORN6EBI34qOA">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_CK8voZvtEeORN6EBI34qOA" label="com.opcoach.migration.luna" width="500" height="400">
+    <children xsi:type="advanced:PerspectiveStack" xmi:id="_CK9WupvtEeORN6EBI34qOA">
+      <children xsi:type="advanced:Perspective" xmi:id="_CK9Wu5vtEeORN6EBI34qOA">
+        <children xsi:type="basic:PartSashContainer" xmi:id="_CK9WvJvtEeORN6EBI34qOA">
+          <children xsi:type="basic:PartStack" xmi:id="_CK9WvZvtEeORN6EBI34qOA">
+            <children xsi:type="basic:Part" xmi:id="_CK9WvpvtEeORN6EBI34qOA" contributionURI="bundleclass://com.opcoach.e4.preferences.example/com.opcoach.e4.preferences.example.parts.SamplePart" label="Sample Part"/>
+            <children xsi:type="basic:Part" xmi:id="_OSDaAJ7PEeOscKhcxPLpfw" elementId="com.opcoach.migration.luna.part.0" contributionURI="bundleclass://org.eclipse.e4.tools.context.spy/org.eclipse.e4.tools.context.spy.ContextSpyPart" label="Context Spy"/>
+          </children>
+        </children>
+      </children>
+    </children>
+    <mainMenu xmi:id="_CK9Ws5vtEeORN6EBI34qOA" elementId="menu:org.eclipse.ui.main.menu">
+      <children xsi:type="menu:Menu" xmi:id="_CK9WtJvtEeORN6EBI34qOA" label="File">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_CK9WtZvtEeORN6EBI34qOA" label="Open" iconURI="platform:/plugin/com.opcoach.e4.preferences.example/icons/sample.png" command="_CK8vsJvtEeORN6EBI34qOA"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_CK9WtpvtEeORN6EBI34qOA" label="Save" iconURI="platform:/plugin/com.opcoach.e4.preferences.example/icons/save_edit.png" command="_CK8vs5vtEeORN6EBI34qOA"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_CK9Wt5vtEeORN6EBI34qOA" label="Quit" command="_CK8vrJvtEeORN6EBI34qOA"/>
+      </children>
+      <children xsi:type="menu:Menu" xmi:id="_WOFQIJ5FEeO_t4Z5K56p-w" elementId="com.opcoach.migration.luna.menu.0" label="Window">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_bYQ2AJ5FEeO_t4Z5K56p-w" elementId="com.opcoach.migration.luna.handledmenuitem.0" command="_GNvZAJ5FEeO_t4Z5K56p-w"/>
+      </children>
+      <children xsi:type="menu:Menu" xmi:id="_CK9WuJvtEeORN6EBI34qOA" label="Help">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_CK9WuZvtEeORN6EBI34qOA" label="About" command="_CK9WsJvtEeORN6EBI34qOA"/>
+      </children>
+    </mainMenu>
+    <trimBars xmi:id="_CK99wJvtEeORN6EBI34qOA">
+      <children xsi:type="menu:ToolBar" xmi:id="_CK99wZvtEeORN6EBI34qOA" elementId="toolbar:org.eclipse.ui.main.toolbar">
+        <children xsi:type="menu:HandledToolItem" xmi:id="_CK99wpvtEeORN6EBI34qOA" iconURI="platform:/plugin/com.opcoach.e4.preferences.example/icons/sample.png" command="_CK8vsJvtEeORN6EBI34qOA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_CK99w5vtEeORN6EBI34qOA" iconURI="platform:/plugin/com.opcoach.e4.preferences.example/icons/save_edit.png" command="_CK8vs5vtEeORN6EBI34qOA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_l26KcJ7aEeOscKhcxPLpfw" elementId="com.opcoach.e4.preferences.example.handledtoolitem.0" label="Preferences" command="_GNvZAJ5FEeO_t4Z5K56p-w"/>
+      </children>
+    </trimBars>
+  </children>
+  <handlers xmi:id="_CK8vrZvtEeORN6EBI34qOA" elementId="com.opcoach.migration.luna.handler.quitCommand" contributionURI="bundleclass://com.opcoach.e4.preferences.example/com.opcoach.e4.preferences.example.handlers.QuitHandler" command="_CK8vrJvtEeORN6EBI34qOA"/>
+  <handlers xmi:id="_CK8vsZvtEeORN6EBI34qOA" elementId="com.opcoach.migration.luna.handler.openCommand" contributionURI="bundleclass://com.opcoach.e4.preferences.example/com.opcoach.e4.preferences.example.handlers.OpenHandler" command="_CK8vsJvtEeORN6EBI34qOA"/>
+  <handlers xmi:id="_CK8vtJvtEeORN6EBI34qOA" elementId="com.opcoach.migration.luna.handler.saveCommand" contributionURI="bundleclass://com.opcoach.e4.preferences.example/com.opcoach.e4.preferences.example.handlers.SaveHandler" command="_CK8vs5vtEeORN6EBI34qOA"/>
+  <handlers xmi:id="_CK9WsZvtEeORN6EBI34qOA" elementId="com.opcoach.migration.luna.handler.aboutCommand" contributionURI="bundleclass://com.opcoach.e4.preferences.example/com.opcoach.e4.preferences.example.handlers.AboutHandler" command="_CK9WsJvtEeORN6EBI34qOA"/>
+  <handlers xmi:id="_E_iggJ5FEeO_t4Z5K56p-w" elementId="com.opcoach.migration.luna.handler.0" contributionURI="bundleclass://com.opcoach.e4.preferences/com.opcoach.e4.preferences.handlers.E4PreferencesHandler" command="_GNvZAJ5FEeO_t4Z5K56p-w"/>
+  <bindingTables xmi:id="_CK8vrpvtEeORN6EBI34qOA" bindingContext="_CK8vqZvtEeORN6EBI34qOA">
+    <bindings xmi:id="_CK8vr5vtEeORN6EBI34qOA" keySequence="M1+Q" command="_CK8vrJvtEeORN6EBI34qOA"/>
+    <bindings xmi:id="_CK8vspvtEeORN6EBI34qOA" keySequence="M1+O" command="_CK8vsJvtEeORN6EBI34qOA"/>
+    <bindings xmi:id="_CK8vtZvtEeORN6EBI34qOA" keySequence="M1+S" command="_CK8vs5vtEeORN6EBI34qOA"/>
+    <bindings xmi:id="_CK9WspvtEeORN6EBI34qOA" keySequence="M1+A" command="_CK9WsJvtEeORN6EBI34qOA"/>
+  </bindingTables>
+  <rootContext xmi:id="_CK8vqZvtEeORN6EBI34qOA" elementId="org.eclipse.ui.contexts.dialogAndWindow" name="In Dialog and Windows">
+    <children xmi:id="_CK8vqpvtEeORN6EBI34qOA" elementId="org.eclipse.ui.contexts.window" name="In Windows"/>
+    <children xmi:id="_CK8vq5vtEeORN6EBI34qOA" elementId="org.eclipse.ui.contexts.dialog" name="In Dialogs"/>
+  </rootContext>
+  <commands xmi:id="_CK8vrJvtEeORN6EBI34qOA" elementId="org.eclipse.ui.file.exit" commandName="quitCommand"/>
+  <commands xmi:id="_CK8vsJvtEeORN6EBI34qOA" elementId="com.opcoach.migration.luna.open" commandName="openCommand"/>
+  <commands xmi:id="_CK8vs5vtEeORN6EBI34qOA" elementId="org.eclipse.ui.file.save" commandName="saveCommand"/>
+  <commands xmi:id="_CK9WsJvtEeORN6EBI34qOA" elementId="org.eclipse.ui.help.aboutAction" commandName="aboutCommand"/>
+  <commands xmi:id="_GNvZAJ5FEeO_t4Z5K56p-w" elementId="org.eclipse.ui.window.preferences" commandName="Preferences"/>
+  <addons xmi:id="_CK8vopvtEeORN6EBI34qOA" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
+  <addons xmi:id="_CK8vo5vtEeORN6EBI34qOA" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
+  <addons xmi:id="_CK8vpJvtEeORN6EBI34qOA" elementId="org.eclipse.e4.ui.bindings.service" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
+  <addons xmi:id="_CK8vpZvtEeORN6EBI34qOA" elementId="org.eclipse.e4.ui.workbench.commands.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.CommandProcessingAddon"/>
+  <addons xmi:id="_CK8vppvtEeORN6EBI34qOA" elementId="org.eclipse.e4.ui.workbench.handler.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
+  <addons xmi:id="_CK8vp5vtEeORN6EBI34qOA" elementId="org.eclipse.e4.ui.workbench.contexts.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.ContextProcessingAddon"/>
+  <addons xmi:id="_CK8vqJvtEeORN6EBI34qOA" elementId="org.eclipse.e4.ui.workbench.bindings.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.swt/org.eclipse.e4.ui.workbench.swt.util.BindingProcessingAddon"/>
+</application:Application>
