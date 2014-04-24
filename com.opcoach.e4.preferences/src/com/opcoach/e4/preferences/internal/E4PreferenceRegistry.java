@@ -1,5 +1,12 @@
 package com.opcoach.e4.preferences.internal;
 
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Set;
+
 import javax.inject.Inject;
 
 import org.eclipse.core.runtime.IConfigurationElement;
@@ -48,6 +55,11 @@ public class E4PreferenceRegistry
 
 	public PreferenceManager getPreferenceManager()
 	{
+
+		// Remember of the unbounded nodes to order parent pages.
+		// Map<category, list of children> (all nodes except root nodes)
+		Map<String, Collection<IPreferenceNode>> childrenNodes = new HashMap<String, Collection<IPreferenceNode>>();
+
 		if (pm != null)
 			return pm;
 
@@ -105,22 +117,63 @@ public class E4PreferenceRegistry
 			{
 				pn = new PreferenceNode(elmt.getAttribute(ATTR_ID), new EmptyPreferencePage(elmt.getAttribute(ATTR_NAME)));
 			}
-			if (isEmpty(elmt.getAttribute(ATTR_CATEGORY)))
+
+			// Issue 2 : Fix bug on order (see :
+			// https://github.com/opcoach/e4Preferences/issues/2)
+			// Add only pages at root level and remember of child pages for
+			// categories
+			String category = elmt.getAttribute(ATTR_CATEGORY);
+			if (isEmpty(category))
 			{
 				pm.addToRoot(pn);
 			} else
 			{
-				IPreferenceNode parent = findNode(pm, elmt.getAttribute(ATTR_CATEGORY));
-				if (parent == null)
+				/*
+				 * IPreferenceNode parent = findNode(pm, category); if (parent
+				 * == null) { // No parent found, but may be the extension has
+				 * not been read yet. So remember of it unboundedNodes.put(pn,
+				 * category); } else { parent.add(pn); }
+				 */
+				// Check if this category is already registered.
+				Collection<IPreferenceNode> children = childrenNodes.get(category);
+				if (children == null)
 				{
-					pm.addToRoot(pn);
-				} else
-				{
-					parent.add(pn);
+					children = new ArrayList<IPreferenceNode>();
+					childrenNodes.put(category, children);
 				}
+				children.add(pn);
 			}
 		}
 
+		// Must now bind pages that has not been added in nodes (depends on the
+		// preference page read order)
+		// Iterate on all possible categories
+		Collection<String> categoriesDone = new ArrayList<String>();
+
+		while (!childrenNodes.isEmpty())
+		{
+			for (String cat : Collections.unmodifiableSet(childrenNodes.keySet()))
+			{
+				// Is this category already in preference manager ? If not add it later...
+				IPreferenceNode parent = findNode(pm, cat);
+				if (parent != null)
+				{
+					// Can add the list of children to this parent page...
+					for (IPreferenceNode pn : childrenNodes.get(cat))
+					{
+						parent.add(pn);
+					}
+					// Ok This parent page is done. Can remove it from map outside of this loop
+					categoriesDone.add(cat);
+				}
+			}
+			
+			for (String keyToRemove : categoriesDone)
+				childrenNodes.remove(keyToRemove);
+			categoriesDone.clear();
+
+		}
+		
 		return pm;
 	}
 

@@ -15,6 +15,12 @@
    </extension>
    <extension
          point="com.opcoach.e4.preferences.e4PreferencePages">
+              <page
+            class="com.opcoach.e4.preferences.example.pages.ADefaultPage"
+            id="com.opcoach.e4.preferences.example.page6"
+            name="page 6 sous page 5"
+             category="com.opcoach.e4.preferences.example.page5">
+      </page>
       <page
             class="com.opcoach.e4.preferences.example.pages.SamplePage"
             id="com.opcoach.e4.preferences.example.sample"
@@ -29,13 +35,33 @@
             category="com.opcoach.e4.preferences.example.rootPage"
             class="com.opcoach.e4.preferences.example.pages.Page1"
             id="com.opcoach.e4.preferences.example.page1"
-            name="Page 1">
+            name="Page 1 (sous root)">
       </page>
       <page
             category="com.opcoach.e4.preferences.example.page1"
             class="com.opcoach.e4.preferences.example.pages.Page2"
             id="com.opcoach.e4.preferences.example.page2"
-            name="Page 2">
+            name="Page 2 (sous page 1)">
+      </page>
+     
+      <page
+            category="com.opcoach.e4.preferences.example.page3"
+            class="com.opcoach.e4.preferences.example.pages.ADefaultPage"
+            id="com.opcoach.e4.preferences.example.page4"
+            name="Page 4 sous page 3">
+      </page>
+       <page
+            class="com.opcoach.e4.preferences.example.pages.ADefaultPage"
+            id="com.opcoach.e4.preferences.example.page3"
+            name="page 3">
+      </page>
+      <page
+            class="com.opcoach.e4.preferences.example.pages.ADefaultPage"
+            id="com.opcoach.e4.preferences.example.page5"
+            name="page 5 sous root"
+                        category="com.opcoach.e4.preferences.example.rootPage">
+                    
+            
       </page>
    </extension>
    <extension
