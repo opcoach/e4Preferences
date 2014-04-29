@@ -1,4 +1,14 @@
-/* 
+/*******************************************************************************
+ * Copyright (c) 2014 OPCoach.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
+ *
+ * Contributors:
+ *     Manumitting Technologies : Brian de Alwis for initial API and implementation
+ *     OPCoach  : O.Prouvost fix bugs on hierarchy
+ *******************************************************************************//* 
  * Handler to open up a configured preferences dialog.
  * Written by Brian de Alwis, Manumitting Technologies.
  * Placed in the public domain.

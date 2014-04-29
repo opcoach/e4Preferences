@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="com.opcoach.e4.preferences.e4PreferencePages">
+      <page
+            category="com.opcoach.e4.preferences.example.page6"
+            class="com.opcoach.e4.preferences.provider.example.pages.SamplePageWithProvider"
+            id="com.opcoach.e4.preferences.provider.example.page1"
+            name="Default Page With Store (sous page 6)">
+      </page>
+   </extension>
+   <extension
+         point="com.opcoach.e4.preferences.e4PreferenceStoreProvider">
+      <preferenceStoreProvider
+            class="com.opcoach.e4.preferences.provider.example.MyPStoreProvider"
+            pluginId="com.opcoach.e4.preferences.provider.example">
+      </preferenceStoreProvider>
+   </extension>
+
+</plugin>

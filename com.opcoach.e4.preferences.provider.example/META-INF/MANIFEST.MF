@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Example
+Bundle-SymbolicName: com.opcoach.e4.preferences.provider.example;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: com.opcoach.e4.preferences.provider.example.Activator
+Bundle-Vendor: OPCOACH
+Require-Bundle: org.eclipse.core.runtime,
+ com.opcoach.e4.preferences;bundle-version="1.0.0",
+ org.eclipse.jface
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-ActivationPolicy: lazy
