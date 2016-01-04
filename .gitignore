@@ -1,5 +1,12 @@
 *.class
 
+# remove target maven directories
+target/
+
+# remove bin directories
+bin/
+
+
 # Package Files #
 *.jar
 *.war
