@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/com.opcoach.e4.preferences.feature_1.0.0.qualifier.jar" id="com.opcoach.e4.preferences.feature" version="1.0.0.qualifier">
+      <category name="e4Preferences"/>
+   </feature>
+   <category-def name="e4Preferences" label="e4Preferences">
+      <description>
+         A feature providing an extension point to manage preference pages in a pure E4 application.
+      </description>
+   </category-def>
+</site>
