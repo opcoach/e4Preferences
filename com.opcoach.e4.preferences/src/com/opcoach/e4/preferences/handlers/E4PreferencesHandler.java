@@ -27,7 +27,7 @@ import org.eclipse.jface.preference.PreferenceManager;
 import org.eclipse.jface.viewers.ViewerComparator;
 import org.eclipse.swt.widgets.Shell;
 
-import com.opcoach.e4.preferences.internal.E4PreferenceRegistry;
+import com.opcoach.e4.preferences.E4PreferenceRegistry;
 
 
 public class E4PreferencesHandler

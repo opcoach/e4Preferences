@@ -8,7 +8,7 @@
  * Contributors:
  *     OPCoach - initial API and implementation
  *******************************************************************************/
-package com.opcoach.e4.preferences.internal;
+package com.opcoach.e4.preferences;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -37,9 +37,6 @@ import org.eclipse.swt.SWT;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Label;
-
-import com.opcoach.e4.preferences.IPreferenceStoreProvider;
-import com.opcoach.e4.preferences.ScopedPreferenceStore;
 
 @Creatable
 public class E4PreferenceRegistry
