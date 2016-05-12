@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:commands="http://www.eclipse.org/ui/2010/UIModel/application/commands" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_lEIqABg7Eea5sOEu5jVdMg">
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="__d8PUBg7Eea5sOEu5jVdMg" featurename="commands" parentElementId="xpath:/">
+    <elements xsi:type="commands:Command" xmi:id="_oJElMBg8Eea5sOEu5jVdMg" elementId="org.eclipse.ui.window.preferences" commandName="Preferences"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_x5_FoBg8Eea5sOEu5jVdMg" featurename="handlers" parentElementId="xpath:/">
+    <elements xsi:type="commands:Handler" xmi:id="_1evl0Bg8Eea5sOEu5jVdMg" elementId="com.opcoach.e4.preferences.mainmenu.preferenceshandler" contributionURI="bundleclass://com.opcoach.e4.preferences/com.opcoach.e4.preferences.handlers.E4PreferencesHandler" command="_oJElMBg8Eea5sOEu5jVdMg"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_A_LjIBg9Eea5sOEu5jVdMg" featurename="menuContributions" parentElementId="xpath:/">
+    <elements xsi:type="menu:MenuContribution" xmi:id="_W-R3sBg9Eea5sOEu5jVdMg" elementId="com.opcoach.e4.preferences.mainmenu.menucontribution.0" positionInParent="after=additions" parentId="org.eclipse.ui.main.menu">
+      <children xsi:type="menu:Menu" xmi:id="_cnT8wBg9Eea5sOEu5jVdMg" elementId="com.opcoach.e4.preferences.mainmenu.menu.window" label="Window"/>
+    </elements>
+    <elements xsi:type="menu:MenuContribution" xmi:id="_mUHZQBg9Eea5sOEu5jVdMg" elementId="com.opcoach.e4.preferences.mainmenu.menucontribution.1" positionInParent="after=additions" parentId="window">
+      <children xsi:type="menu:HandledMenuItem" xmi:id="_s72iQBg9Eea5sOEu5jVdMg" elementId="id.preferences" label="Preferences" command="_oJElMBg8Eea5sOEu5jVdMg"/>
+    </elements>
+  </fragments>
+</fragment:ModelFragments>
