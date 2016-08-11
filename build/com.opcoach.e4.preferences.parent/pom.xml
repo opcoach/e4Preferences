@@ -15,7 +15,7 @@
 		<repository>
 			<id>mars</id>
 			<layout>p2</layout>
-			<url>http://download.eclipse.org/releases/mars/</url>
+			<url>http://download.eclipse.org/releases/neon/</url>
 		</repository>
 	</repositories>
 
@@ -70,6 +70,7 @@
 	<!-- the modules that should be built together -->
 	<modules>
 		<module>../../com.opcoach.e4.preferences</module>
+		<module>../../com.opcoach.e4.preferences.mainmenu</module>
 		<module>../com.opcoach.e4.preferences.feature</module>
 		<module>../com.opcoach.e4.preferences.repository</module>
 	</modules>
