@@ -8,7 +8,7 @@
   </fragments>
   <fragments xsi:type="fragment:StringModelFragment" xmi:id="_A_LjIBg9Eea5sOEu5jVdMg" featurename="menuContributions" parentElementId="xpath:/">
     <elements xsi:type="menu:MenuContribution" xmi:id="_W-R3sBg9Eea5sOEu5jVdMg" elementId="com.opcoach.e4.preferences.mainmenu.menucontribution.0" positionInParent="after=additions" parentId="org.eclipse.ui.main.menu">
-      <children xsi:type="menu:Menu" xmi:id="_cnT8wBg9Eea5sOEu5jVdMg" elementId="com.opcoach.e4.preferences.mainmenu.menu.window" label="Window"/>
+      <children xsi:type="menu:Menu" xmi:id="_cnT8wBg9Eea5sOEu5jVdMg" elementId="window" label="Window"/>
     </elements>
     <elements xsi:type="menu:MenuContribution" xmi:id="_mUHZQBg9Eea5sOEu5jVdMg" elementId="com.opcoach.e4.preferences.mainmenu.menucontribution.1" positionInParent="after=additions" parentId="window">
       <children xsi:type="menu:HandledMenuItem" xmi:id="_s72iQBg9Eea5sOEu5jVdMg" elementId="id.preferences" label="Preferences" command="_oJElMBg8Eea5sOEu5jVdMg"/>
