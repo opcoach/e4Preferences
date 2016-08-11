@@ -18,6 +18,6 @@ Require-Bundle: javax.inject;bundle-version="1.0.0",
  org.eclipse.e4.core.services,
  org.eclipse.e4.tools.context.spy;bundle-version="1.0.0";resolution:=optional,
  com.opcoach.e4.preferences.provider.example;bundle-version="1.0.0"
-Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Import-Package: javax.annotation;version="1.1.0",
  org.eclipse.e4.core.di.extensions
