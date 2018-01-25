@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/opcoach/e4Preferences.svg?branch=master)](https://travis-ci.org/opcoach/e4Preferences)
+
 e4Preferences
 =============
 
