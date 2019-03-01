@@ -1,4 +1,4 @@
 language: java
 jdk: oraclejdk8
-script: mvn install -f build/com.opcoach.e4.preferences.parent/pom.xml
+script: mvn install 
  
