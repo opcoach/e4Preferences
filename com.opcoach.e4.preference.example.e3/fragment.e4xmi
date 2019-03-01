@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmi:id="_9MN3gDwoEem6ZZMhURDZPw">
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="__xR1QDwoEem6ZZMhURDZPw" featurename="snippets" parentElementId="xpath:/">
+    <elements xsi:type="advanced:Perspective" xmi:id="_CVTRMDwpEem6ZZMhURDZPw" elementId="e4prefperspective" selectedElement="_CVTRMTwpEem6ZZMhURDZPw" label="E4 Pref Perspective">
+      <children xsi:type="basic:PartSashContainer" xmi:id="_CVTRMTwpEem6ZZMhURDZPw" selectedElement="_CVTRMjwpEem6ZZMhURDZPw">
+        <children xsi:type="basic:PartStack" xmi:id="_CVTRMjwpEem6ZZMhURDZPw" selectedElement="_CVTRMzwpEem6ZZMhURDZPw">
+          <children xsi:type="basic:Part" xmi:id="_CVTRMzwpEem6ZZMhURDZPw" contributionURI="bundleclass://com.opcoach.e4.preferences.example/com.opcoach.e4.preferences.example.parts.SamplePart" label="Sample Part"/>
+          <children xsi:type="advanced:Placeholder" xmi:id="_ZtlHwDxAEem6ZZMhURDZPw" elementId="org.eclipse.e4.tools.context.spy.ContextSpyPart"/>
+        </children>
+      </children>
+    </elements>
+  </fragments>
+</fragment:ModelFragments>

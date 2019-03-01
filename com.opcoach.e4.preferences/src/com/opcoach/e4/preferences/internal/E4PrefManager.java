@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (c) 2014 OPCoach.
+ * Copyright (c) 2019 OPCoach.
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the Eclipse Public License v1.0
  * which accompanies this distribution, and is available at
@@ -8,18 +8,16 @@
  * Contributors:
  *     OPCoach - initial API and implementation
  *******************************************************************************/
-package com.opcoach.e4.preferences;
+package com.opcoach.e4.preferences.internal;
 
-import org.eclipse.jface.preference.IPreferenceStore;
+import org.eclipse.jface.preference.PreferenceManager;
 
-/** This interface can be implemented to provide a PreferenceStore for a given plugin. 
- * This association must be done in the e4PreferenceStoreProvider extension point. 
- * @author olivier
- *
+import com.opcoach.e4.preferences.E4PreferencesAddon;
+
+/** This is only a specific E4 Pref Manager to be stored in the context 
+ * @see E4PreferencesAddon
  */
-public interface IPreferenceStoreProvider
+public class E4PrefManager extends PreferenceManager
 {
-	/** Must be implemented to return a preference store */
-	public IPreferenceStore getPreferenceStore();
-
+    // Nothing special except marking it as local for E4. 
 }

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<fragment>
+   <extension
+         point="org.eclipse.ui.preferencePages">
+      <page
+            class="com.opcoach.e4.preference.example.e3.SampleE3PrefPage"
+            id="com.opcoach.e4.preference.example.e3.page1"
+            name="A Sample E3 page">
+      </page>
+   </extension>
+   <extension
+         id="id1"
+         point="org.eclipse.e4.workbench.model">
+      <fragment
+            apply="always"
+            uri="fragment.e4xmi">
+      </fragment>
+   </extension>
+
+</fragment>

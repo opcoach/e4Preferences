@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Fragement to mix E3 and E4 preferences
+Bundle-SymbolicName: com.opcoach.e4.preference.example.e3;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: OPCOACH
+Fragment-Host: com.opcoach.e4.preferences.example;bundle-version="1.0.0"
+Require-Bundle: org.eclipse.ui;bundle-version="3.111.0",
+ org.eclipse.e4.ui.model.workbench;bundle-version="2.1.200.v20180920-1522"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Automatic-Module-Name: com.opcoach.e4.preference.example.e3
