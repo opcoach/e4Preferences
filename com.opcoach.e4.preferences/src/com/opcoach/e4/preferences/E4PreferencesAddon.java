@@ -33,30 +33,7 @@ import com.opcoach.e4.preferences.internal.E4PreferenceRegistry;
  */
 public class E4PreferencesAddon {
 
-//	/** 
-//	 * Here we must ensure that PreferenceManager is initialized correctly (see comment inside). 
-//	 * after this method, the PreferenceManager can contain both E3 and E4 pref page or only E4 pages.
-//	 * @param ctx current application context.
-//	 */
-//	@PostConstruct
-//	public void initializePreferenceManager(IEclipseContext ctx) {
-//		
-//		// First of all ... is there a PreferenceManager in the context ? 
-//		//  Yes -> we are in a E3 application that initialized it from class org.eclipse.ui.internal.WorkbenchPlugin (around line 1356)
-//		//       in this case we must complete this existing preference manager with addition pure E4 pref page. 
-//		//  No -> we are running in a pure E4 application... let's manage ours
-//		
-//		PreferenceManager pm = ctx.get(PreferenceManager.class);
-//		if (pm == null)
-//		{
-//			// we are in a pure E4 application without any initialization... Must init it using E4PreferenceRegistry
-//			pm = new PreferenceManager();
-//			ctx.set(PreferenceManager.class, pm);
-//		}
-//		
-//			
-//	}
-//	
+
 	/**
 	 * This method is invoked when the preference manager changes in the context. 
 	 * It can be possible in 2 cases : 
