@@ -26,7 +26,6 @@ It provides also a model fragment to add automaticaly the Preference command in 
       <import plugin="org.eclipse.e4.core.contexts"/>
       <import plugin="org.eclipse.e4.ui.services"/>
       <import plugin="org.eclipse.core.commands"/>
-      <import plugin="org.eclipse.jface"/>
       <import plugin="org.eclipse.e4.ui.model.workbench"/>
       <import plugin="org.eclipse.e4.ui.workbench"/>
       <import plugin="com.opcoach.e4.preferences"/>
