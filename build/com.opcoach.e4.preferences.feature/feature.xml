@@ -20,14 +20,16 @@ It provides also a model fragment to add automaticaly the Preference command in 
    </license>
 
    <requires>
-      <import plugin="javax.inject"/>
-      <import plugin="org.eclipse.core.runtime" version="3.9.0" match="greaterOrEqual"/>
-      <import plugin="org.eclipse.jface" version="3.9.0" match="greaterOrEqual"/>
-      <import plugin="org.eclipse.e4.core.di" version="1.3.0" match="greaterOrEqual"/>
-      <import plugin="org.eclipse.e4.ui.model.workbench" version="1.0.0" match="greaterOrEqual"/>
-      <import plugin="org.eclipse.e4.core.services" version="1.1.0" match="greaterOrEqual"/>
-      <import plugin="org.eclipse.e4.core.contexts" version="1.3.0" match="greaterOrEqual"/>
-      <import plugin="org.eclipse.e4.ui.services" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.core.runtime"/>
+      <import plugin="org.eclipse.e4.core.di"/>
+      <import plugin="org.eclipse.e4.core.services"/>
+      <import plugin="org.eclipse.e4.core.contexts"/>
+      <import plugin="org.eclipse.e4.ui.services"/>
+      <import plugin="org.eclipse.core.commands"/>
+      <import plugin="org.eclipse.jface"/>
+      <import plugin="org.eclipse.e4.ui.model.workbench"/>
+      <import plugin="org.eclipse.e4.ui.workbench"/>
+      <import plugin="com.opcoach.e4.preferences"/>
    </requires>
 
    <plugin
