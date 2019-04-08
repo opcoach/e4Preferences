@@ -13,9 +13,9 @@
 
 	<repositories>
 		<repository>
-			<id>SimRel2018-12</id>
+			<id>SimRel2019-03</id>
 			<layout>p2</layout>
-			<url>http://download.eclipse.org/releases/2018-12</url>
+			<url>http://download.eclipse.org/releases/2019-03</url>
 		</repository>
 	</repositories>
 
