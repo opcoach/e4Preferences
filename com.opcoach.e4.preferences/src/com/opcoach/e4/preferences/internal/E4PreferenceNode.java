@@ -1,5 +1,6 @@
 package com.opcoach.e4.preferences.internal;
 
+import java.text.MessageFormat;
 import java.util.Map;
 
 import org.eclipse.core.runtime.Platform;
@@ -49,9 +50,16 @@ public class E4PreferenceNode extends PreferenceNode
 		try
 		{
 			page = clazz.newInstance();
-		} catch (InstantiationException | IllegalAccessException e)
+		} catch (InstantiationException  | IllegalAccessException e)
 		{
-			getLogger().error("Unable to create the E4 Preference page with class name = '{0}' from bundle = '{1}'", clazz.getCanonicalName(), bundleID);
+			String explain = "";
+			if (e instanceof IllegalAccessException)
+			{
+				explain="The class should have a PUBLIC default constructor (check its modifier)";
+
+			}
+			getLogger().error(e, MessageFormat.format("Unable to create the E4 Preference page with class name = {0} from bundle = {1} " + explain, clazz.getCanonicalName(), bundleID));
+			
 
 		}
 
@@ -79,7 +87,7 @@ public class E4PreferenceNode extends PreferenceNode
 		Bundle b = Platform.getBundle(bundleID);
 		if (b == null)
 		{
-			getLogger().error("The bundle with ID='{0}' is not found to create the E4 preference page with ID ='{1}' ", bundleID, getId());
+			getLogger().error(MessageFormat.format("The bundle with ID={0} is not found to create the E4 preference page with ID ={1} ", bundleID, getId()));
 		} else
 		{
 			// Create the clazz instance
@@ -88,12 +96,12 @@ public class E4PreferenceNode extends PreferenceNode
 				clazz = (Class<? extends FieldEditorPreferencePage>) b.loadClass(clazzname);
 			} catch (ClassNotFoundException e)
 			{
-				getLogger().error("The class named '{0}' is not found to create the E4 preference page with ID ='{1}' ", clazzname, getId());
+				getLogger().error(e, MessageFormat.format("The class named {0} is not found to create the E4 preference page with ID ={1} ", clazzname, getId()));
 
 			} catch (ClassCastException e)
 			{
-				getLogger().error("The class named '{0}' is found but is not extending FieldEditorPreferencePage. Check definition of the E4 preference page with ID ='{1}' ",
-						clazzname, getId());
+				getLogger().error(e, MessageFormat.format("The class named {0} is found but is not extending FieldEditorPreferencePage. Check definition of the E4 preference page with ID ={1} ",
+						clazzname, getId()));
 
 			}
 		}

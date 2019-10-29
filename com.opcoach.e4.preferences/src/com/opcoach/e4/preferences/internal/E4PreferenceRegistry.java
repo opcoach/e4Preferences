@@ -10,6 +10,7 @@
  *******************************************************************************/
 package com.opcoach.e4.preferences.internal;
 
+import java.text.MessageFormat;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
@@ -72,17 +73,17 @@ public class E4PreferenceRegistry
 			String pageClass = elmt.getAttribute(ATTR_CLASS);
 			if (!elmt.getName().equals(ELMT_PAGE))
 			{
-				logger.warn("unexpected element: {0}", elmt.getName());
+				logger.warn("unexpected element : " + elmt.getName());
 				continue;
 			} else if (isEmpty(pageID) || isEmpty(pageName))
 			{
-				logger.warn("missing id and/or name: {0}", bundleId);
+				logger.warn("missing id and/or name: " + bundleId);
 				continue;
 			}
 			E4PreferenceNode pn = null;
 			if (isEmpty(pageClass))
 			{
-				logger.warn("The class defined in E4 Preference page '{0}' is empty. Cannot create it", elmt.getName());
+				logger.warn(MessageFormat.format("The class defined in E4 Preference page {0} is empty. Cannot create it", elmt.getName()));
 				continue;
 			}
 
