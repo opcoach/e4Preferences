@@ -8,5 +8,6 @@ Bundle-Vendor: OPCOACH
 Require-Bundle: org.eclipse.core.runtime,
  com.opcoach.e4.preferences,
  org.eclipse.jface
-Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-RequiredExecutionEnvironment: JavaSE-11
 Bundle-ActivationPolicy: lazy
+Automatic-Module-Name: com.opcoach.e4.preferences.provider.example
