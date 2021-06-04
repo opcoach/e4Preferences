@@ -9,5 +9,5 @@ This new release is updated **to mix both E3 and E4 preference pages.** So you c
 
 You can get some explainations <a href="http://www.opcoach.com/en/managing-preference-pages-with-eclipse-4/">on my blog</a>
 
-This code is available on this p2 repository : https://www.opcoach.com/repository/2019-12 (use the com.opcoach.e4.preferences.feature.feature.group) 
+This code is available on this p2 repository : https://www.opcoach.com/repository/latest (use the com.opcoach.e4.preferences.feature.feature.group) 
 
