@@ -9,5 +9,9 @@ This new release is updated **to mix both E3 and E4 preference pages.** So you c
 
 You can get some explainations <a href="http://www.opcoach.com/en/managing-preference-pages-with-eclipse-4/">on my blog</a>
 
-This code is available on this p2 repository : https://www.opcoach.com/repository/latest (use the com.opcoach.e4.preferences.feature.feature.group) 
+If you want to add the 'Window -> Preferences' menu automatically in your **pure** e4 application, use the **com.opcoach.e4.preferences.mainmenu** plugin fragment in your launch configuration. To get the menu, it assumes that your main menu has the regular ID : 'org.eclipse.ui.main.menu'. 
+
+If you are running with the compatibility layer, do not use the *com.opcoach.e4.preferences.mainmenu* plugin fragment, and prefer to add the Preference Action in your ActionBarAdvisor. 
+
+This project is available on this p2 repository : https://www.opcoach.com/repository/latest (use the com.opcoach.e4.preferences.feature.feature.group) 
 
