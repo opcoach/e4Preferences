@@ -7,11 +7,10 @@
 	<parent>
 		<groupId>com.opcoach.e4.preferences</groupId>
 		<artifactId>com.opcoach.e4.preferences.parent</artifactId>
-		<version>1.3.0-SNAPSHOT</version>
+		<version>1.3.0</version>
 	</parent>
 
 	<artifactId>com.opcoach.e4.preferences</artifactId>
-	<version>1.3.0-SNAPSHOT</version>
 	<packaging>eclipse-plugin</packaging>
 
 
