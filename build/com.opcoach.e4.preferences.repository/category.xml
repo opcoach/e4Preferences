@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <feature url="features/com.opcoach.e4.preferences.feature_1.3.0.qualifier.jar" id="com.opcoach.e4.preferences.feature" version="1.3.0.qualifier">
+   <feature url="features/com.opcoach.e4.preferences.feature_1.3.1.jar" id="com.opcoach.e4.preferences.feature" version="1.3.1">
       <category name="e4Preferences"/>
    </feature>
    <feature id="com.opcoach.e4.preferences.feature.source">
