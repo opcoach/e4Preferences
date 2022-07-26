@@ -2,7 +2,7 @@
 <feature
       id="com.opcoach.e4.preferences.feature"
       label="e4 Preferences"
-      version="1.3.1"
+      version="1.3.2"
       provider-name="OPCOACH">
 
    <description url="https://github.com/opcoach/e4Preferences">
@@ -18,18 +18,6 @@ It provides also a model fragment to add automaticaly the Preference command in 
    <license url="https://www.eclipse.org/legal/epl-v10.html">
       This plugin is delivered under Eclipse Public License
    </license>
-
-   <requires>
-      <import plugin="org.eclipse.core.runtime"/>
-      <import plugin="org.eclipse.e4.core.di"/>
-      <import plugin="org.eclipse.e4.core.services"/>
-      <import plugin="org.eclipse.e4.core.contexts"/>
-      <import plugin="org.eclipse.e4.ui.services"/>
-      <import plugin="org.eclipse.core.commands"/>
-      <import plugin="org.eclipse.e4.ui.model.workbench"/>
-      <import plugin="org.eclipse.e4.ui.workbench"/>
-      <import plugin="com.opcoach.e4.preferences"/>
-   </requires>
 
    <plugin
          id="com.opcoach.e4.preferences"
