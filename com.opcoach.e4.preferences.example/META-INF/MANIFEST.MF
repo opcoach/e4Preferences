@@ -15,8 +15,7 @@ Require-Bundle: javax.inject;bundle-version="0.0.0",
  org.eclipse.e4.core.contexts;bundle-version="0.0.0",
  org.eclipse.e4.core.di.extensions;bundle-version="0.0.0",
  com.opcoach.e4.preferences,
- com.opcoach.e4.preferences.provider.example,
- org.eclipse.e4.tools.context.spy
+ com.opcoach.e4.preferences.provider.example
 Bundle-RequiredExecutionEnvironment: JavaSE-11
 Import-Package: javax.annotation;version="1.2.0"
 Automatic-Module-Name: com.opcoach.e4.preferences.example
