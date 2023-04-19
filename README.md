@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/opcoach/e4Preferences.svg?branch=master)](https://travis-ci.org/opcoach/e4Preferences)
+![Build Status](https://github.com/opcoach/e4Preferences/actions/workflows/maven.yml/badge.svg)
 
 e4Preferences
 =============
