@@ -27,5 +27,11 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
         cache: maven
+    - name: Setup Maven Action
+      uses: s4u/setup-maven-action@v1.8.0
+      with:
+          java-version: 17
+          maven-version: 3.9.2
+
     - name: Build with Maven
       run: mvn -Dtoolchain.skip -B package --file pom.xml
