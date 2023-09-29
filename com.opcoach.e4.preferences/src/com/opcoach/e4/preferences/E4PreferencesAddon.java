@@ -8,7 +8,7 @@
  * Contributors:
  *     OPCoach - initial API and implementation
  *******************************************************************************/
-
+//Cindy
 package com.opcoach.e4.preferences;
 
 import javax.inject.Inject;
