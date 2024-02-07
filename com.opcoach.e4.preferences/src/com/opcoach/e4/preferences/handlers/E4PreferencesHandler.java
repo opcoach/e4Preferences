@@ -17,8 +17,6 @@
 																					*/
 package com.opcoach.e4.preferences.handlers;
 
-import javax.inject.Named;
-
 import org.eclipse.e4.core.contexts.IEclipseContext;
 import org.eclipse.e4.core.di.annotations.Execute;
 import org.eclipse.e4.core.di.annotations.Optional;
@@ -31,6 +29,8 @@ import org.eclipse.swt.widgets.Shell;
 
 import com.opcoach.e4.preferences.internal.E4PrefManager;
 import com.opcoach.e4.preferences.internal.E4PreferenceRegistry;
+
+import jakarta.inject.Named;
 
 /**
  * This handler if provided to open preference pages. In a pure E4 application

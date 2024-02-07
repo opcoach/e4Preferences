@@ -4,8 +4,7 @@ Bundle-Name: Test E4 Preferences
 Bundle-SymbolicName: com.opcoach.e4.preferences.example;singleton:=true
 Bundle-Version: 1.0.0.qualifier
 Bundle-Vendor: OPCOACH
-Require-Bundle: javax.inject;bundle-version="0.0.0",
- org.eclipse.core.runtime;bundle-version="0.0.0",
+Require-Bundle: org.eclipse.core.runtime;bundle-version="0.0.0",
  org.eclipse.e4.ui.model.workbench;bundle-version="0.0.0",
  org.eclipse.jface;bundle-version="0.0.0",
  org.eclipse.e4.ui.services;bundle-version="0.0.0",
@@ -15,7 +14,8 @@ Require-Bundle: javax.inject;bundle-version="0.0.0",
  org.eclipse.e4.core.contexts;bundle-version="0.0.0",
  org.eclipse.e4.core.di.extensions;bundle-version="0.0.0",
  com.opcoach.e4.preferences,
- com.opcoach.e4.preferences.provider.example
+ com.opcoach.e4.preferences.provider.example,
+ jakarta.inject.jakarta.inject-api;bundle-version="2.0.1"
 Bundle-RequiredExecutionEnvironment: JavaSE-11
-Import-Package: javax.annotation;version="1.2.0"
+Import-Package: jakarta.annotation;version="2.1.1"
 Automatic-Module-Name: com.opcoach.e4.preferences.example
