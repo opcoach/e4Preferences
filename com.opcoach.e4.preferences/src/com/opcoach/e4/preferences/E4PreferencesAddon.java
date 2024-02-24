@@ -11,14 +11,14 @@
 
 package com.opcoach.e4.preferences;
 
-import jakarta.inject.Inject;
-
 import org.eclipse.e4.core.contexts.IEclipseContext;
 import org.eclipse.e4.core.di.annotations.Optional;
 import org.eclipse.jface.preference.PreferenceManager;
 
 import com.opcoach.e4.preferences.internal.E4PrefManager;
 import com.opcoach.e4.preferences.internal.E4PreferenceRegistry;
+
+import jakarta.inject.Inject;
 
 /** This addon is used to ensure that current PreferenceManager in the context is updated with both : 
  * 
