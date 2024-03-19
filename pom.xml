@@ -8,14 +8,14 @@
 	<packaging>pom</packaging>
 
 	<properties>
-		<tycho-version>4.0.5</tycho-version>
+		<tycho-version>4.0.6</tycho-version>
 	</properties>
 
 	<repositories>
 		<repository>
-			<id>SimRel203-12</id>
+			<id>SimRel204-03</id>
 			<layout>p2</layout>
-			<url>http://download.eclipse.org/releases/2023-12</url>
+			<url>http://download.eclipse.org/releases/2024-03</url>
 		</repository>
 	</repositories>
 
