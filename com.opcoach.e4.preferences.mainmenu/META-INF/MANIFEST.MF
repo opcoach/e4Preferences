@@ -7,5 +7,5 @@ Bundle-Vendor: OPCOACH
 Require-Bundle: org.eclipse.e4.ui.model.workbench;bundle-version="1.1.100.v20150407-1430",
  org.eclipse.e4.ui.workbench,
  com.opcoach.e4.preferences;bundle-version="1.2.0"
-Bundle-RequiredExecutionEnvironment: JavaSE-11
+Bundle-RequiredExecutionEnvironment: JavaSE-17
 Automatic-Module-Name: com.opcoach.e4.preferences.mainmenu
